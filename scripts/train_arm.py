@@ -52,12 +52,12 @@ def main():
         AutoModelForCausalLM,
         AutoTokenizer,
         BitsAndBytesConfig,
-        TrainerCallback,
         set_seed,
     )
-    from trl import GRPOConfig, GRPOTrainer
+    from trl import GRPOTrainer
     from arm_logging import make_arm_logged_reward
     from diagnostics import summarize
+    from grpo_compat import CompatibleGRPOConfig, TrainingTimeBudget
 
     if not torch.cuda.is_available():
         parser.error("CUDA GPU required")
@@ -112,30 +112,6 @@ def main():
     model.config.use_cache = False
     resolved = getattr(model.config, "_commit_hash", None)
     assert resolved in (None, cfg["revision"]), f"Unexpected model commit {resolved}"
-
-    class CompatibleGRPOConfig(GRPOConfig):
-        def __post_init__(self):
-            # TRL 0.22.2 copies an initialized config in prepare_peft_model.
-            if (
-                self.generation_batch_size is not None
-                and self.steps_per_generation is not None
-            ):
-                self.steps_per_generation = None
-            super().__post_init__()
-
-    class TrainingTimeBudget(TrainerCallback):
-        def __init__(self, seconds):
-            self.seconds, self.started, self.triggered = seconds, None, False
-
-        def on_train_begin(self, args, state, control, **kwargs):
-            self.started = time.perf_counter()
-            return control
-
-        def on_step_end(self, args, state, control, **kwargs):
-            if time.perf_counter() - self.started >= self.seconds:
-                self.triggered = True
-                control.should_training_stop = True
-            return control
 
     budget = TrainingTimeBudget(a.budget_seconds)
     logged = make_arm_logged_reward(
