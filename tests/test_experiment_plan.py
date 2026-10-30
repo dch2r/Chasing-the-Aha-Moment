@@ -24,4 +24,4 @@ class ExperimentPlanTests(unittest.TestCase):
         self.assertTrue(set(selected).isdisjoint(excluded))
         self.assertTrue(all(0 <= i < 7473 for i in selected))
         self.assertEqual(plan["revision"], old["revision"])
-        self.assertEqual(plan["status"], "planned_not_run")
+        self.assertEqual(plan["status"], "stage1_complete_stage2_not_run")

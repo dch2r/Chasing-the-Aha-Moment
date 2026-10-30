@@ -1,0 +1,15 @@
+{
+  "arm": "historical",
+  "seed": 3407,
+  "steps": 20,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "train_ids_from": "results/pilot/run_metadata/train.jsonl",
+  "num_generations": 4,
+  "max_prompt_length": 384,
+  "max_completion_length": 512,
+  "rank": 16,
+  "learning_rate": 5e-06,
+  "training_budget_seconds": 1800,
+  "gpu": "Tesla T4"
+}

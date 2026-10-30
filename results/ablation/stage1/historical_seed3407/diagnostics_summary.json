@@ -1,0 +1,25 @@
+{
+  "logged_completions": 80,
+  "reward_calls": 20,
+  "prompt_groups": 20,
+  "groups_with_reward_variation": 17,
+  "status_counts": {
+    "correct": 42,
+    "parsed_answer_mismatch": 16,
+    "missing_or_duplicate_answer_tags": 21,
+    "ambiguous_trailing_text": 1
+  },
+  "format_valid": 9,
+  "hit_token_cap": 0,
+  "note": "Counts describe sampled training responses, not held-out accuracy. Missing answer fields need human inspection.",
+  "arm": "historical",
+  "seed": 3407,
+  "requested_steps": 20,
+  "completed_steps": 20,
+  "stop_reason": "step_limit",
+  "complete": true,
+  "steps_with_nonzero_gradient": 17,
+  "tensors_checked": 224,
+  "tensors_changed": 224,
+  "l2_change": 0.030088905680781985
+}

@@ -1,5 +1,5 @@
 {
-  "status": "planned_not_run",
+  "status": "stage1_complete_stage2_not_run",
   "dataset": "openai/gsm8k",
   "subset": "main",
   "split": "train",

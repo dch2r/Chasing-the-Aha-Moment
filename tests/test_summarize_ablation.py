@@ -59,6 +59,15 @@ class SummarizeAblationTests(unittest.TestCase):
         self.assertFalse(result["checks"]["all_adapter_tensors_changed"])
         self.assertFalse(result["feasible"])
 
+    def test_matched_steps_isolate_the_parser(self):
+        old = fake_run(self.root, "historical")
+        new = fake_run(self.root, "corrected")
+        steps = summarize_ablation.matched_steps(old, new)
+        self.assertEqual(len(steps), 2)
+        self.assertEqual(steps[0]["historical_rewards"], [0.0, 2.5, 0.0, 2.5])
+        self.assertEqual(steps[0]["corrected_rewards"], [2.0, 2.5, 0.0, 2.5])
+        self.assertEqual(len(steps[0]["penalized_correct"]), 1)
+
     def test_missing_logged_step_is_not_feasible(self):
         result = summarize_ablation.summarize_run(fake_run(self.root, "historical"), 2)
         self.assertFalse(result["checks"]["every_step_logged"])

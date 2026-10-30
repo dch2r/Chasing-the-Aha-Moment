@@ -60,7 +60,11 @@ For Colab, open [notebooks/Evaluate_Saved_Adapter.ipynb](notebooks/Evaluate_Save
 
 [notebooks/Train_Pilot.ipynb](notebooks/Train_Pilot.ipynb) contains the recorded 20-step workflow. It intentionally preserves the historical reward parser, including its known presentation-related false negatives.
 
-The next study compares historical, corrected and format-only rewards under matched settings. The protocol is in [experiments/](experiments/), and [notebooks/Reward_Ablation_Stage1.ipynb](notebooks/Reward_Ablation_Stage1.ipynb) runs the first stage on a T4; **those training runs have not been performed yet**. See [docs/NEXT_EXPERIMENT.md](docs/NEXT_EXPERIMENT.md) before allocating GPU time.
+### Reward ablation (stage 1)
+
+Three fresh adapters were trained for 20 steps each with the historical parser, the corrected parser, or no correctness reward at all, holding everything else fixed ([notebooks/Reward_Ablation_Stage1.ipynb](notebooks/Reward_Ablation_Stage1.ipynb)). With the same seed, the historical and corrected arms sampled identical responses for the first five steps, so only the reward differed. On two of those steps the historical parser gave zero reward to a correct answer, such as `…the answer is <answer>407</answer>.`, which GRPO's group-relative advantage then pushed the model away from. Over the full historical run, 7 of 80 sampled answers were correct but unrewarded. The format-only control produced a gradient on only 7 of 20 steps.
+
+Details, the feasibility table and limits are in [docs/ABLATION_STAGE1.md](docs/ABLATION_STAGE1.md). No held-out evaluation of these adapters was run. A full comparison on 256 reserved questions with three seeds (stage 2 in [docs/NEXT_EXPERIMENT.md](docs/NEXT_EXPERIMENT.md)) is designed but not run; it would take roughly 25 T4 GPU-hours.
 
 ## Repository map
 
@@ -73,6 +77,7 @@ The next study compares historical, corrected and format-only rewards under matc
 | `results/evaluation/` | Original 32-question paired evaluation |
 | `results/replay/` | Completed portable replay |
 | `results/analysis/` | Recomputed statistics and changed-answer evidence |
+| `results/ablation/stage1/` | Reward-ablation training logs and summary |
 | `legacy/original/` | Historical Llama 8B notebooks |
 
 The historical notebook `legacy/original/Llama3_1_(8B)_GRPO_250.ipynb` is not the baseline for the Qwen experiment. Its limitations and relation to this work are explained in [docs/LLAMA_REVIEW.md](docs/LLAMA_REVIEW.md). The actual baseline is the same Qwen model with its adapter disabled.

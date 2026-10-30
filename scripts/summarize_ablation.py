@@ -58,6 +58,42 @@ def summarize_run(run, num_generations):
     return out
 
 
+def load_rows(run):
+    path = run / "training_responses.jsonl"
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+
+
+def matched_steps(historical_run, corrected_run):
+    """Steps where both arms sampled identical responses, so only the reward differs.
+
+    Same seed means identical generations until the adapters diverge. On those
+    steps, any reward difference comes from the parser alone.
+    """
+    groups = {}
+    for old, new in zip(load_rows(historical_run), load_rows(corrected_run)):
+        if old["source_id"] != new["source_id"] or old["call_id"] != new["call_id"]:
+            raise ValueError("Arms saw different questions; not comparable")
+        groups.setdefault(old["call_id"], []).append((old, new))
+    steps = []
+    for call_id, pairs in sorted(groups.items()):
+        if not all(o["response"] == n["response"] for o, n in pairs):
+            break
+        steps.append(
+            dict(
+                step=call_id,
+                source_id=pairs[0][0]["source_id"],
+                historical_rewards=[o["total_reward"] for o, _ in pairs],
+                corrected_rewards=[n["total_reward"] for _, n in pairs],
+                penalized_correct=[
+                    o["response"][-40:]
+                    for o, n in pairs
+                    if n["corrected_correct"] and not o["historical_correct"]
+                ],
+            )
+        )
+    return steps
+
+
 COLUMNS = [
     ("arm", "Arm"),
     ("completed_steps", "Steps"),
@@ -107,10 +143,28 @@ def main():
         sys.exit("No finished runs found")
     print(table(results))
     print("\nTraining samples only; not held-out accuracy or evidence of reasoning.")
+    report = dict(runs=results)
+    old, new = (a.runs / f"{arm}_seed{a.seed}" for arm in ("historical", "corrected"))
+    if (old / "diagnostics_summary.json").exists() and (
+        new / "diagnostics_summary.json"
+    ).exists():
+        steps = matched_steps(old, new)
+        report["matched_steps"] = steps
+        differing = [s for s in steps if s["historical_rewards"] != s["corrected_rewards"]]
+        print(
+            f"\nIdentical samples in historical and corrected arms for the first "
+            f"{len(steps)} steps; rewards differed on {len(differing)} of them:"
+        )
+        for s in differing:
+            print(
+                f"  step {s['step']}: historical {s['historical_rewards']} vs "
+                f"corrected {s['corrected_rewards']}; old parser rejected "
+                f"correct answers ending {s['penalized_correct']}"
+            )
     if a.output:
         if a.output.exists():
             sys.exit(f"Refusing to overwrite {a.output}")
-        a.output.write_text(json.dumps(results, indent=2))
+        a.output.write_text(json.dumps(report, indent=2))
     if len(results) < len(ARMS) or not all(r["feasible"] for r in results):
         sys.exit(1)
 

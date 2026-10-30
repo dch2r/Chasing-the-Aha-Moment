@@ -1,0 +1,185 @@
+{
+  "runs": [
+    {
+      "arm": "historical",
+      "seed": 3407,
+      "completed_steps": 20,
+      "requested_steps": 20,
+      "seconds": 771.5,
+      "peak_allocated_gib": 3.2,
+      "responses": 80,
+      "unique_questions": 20,
+      "historical_correct": 35,
+      "corrected_correct": 42,
+      "parser_disagreements": 7,
+      "format_valid": 9,
+      "hit_token_cap": 0,
+      "mean_tokens": 210.9,
+      "mean_reward": 0.9313,
+      "groups_with_reward_variation": 17,
+      "prompt_groups": 20,
+      "steps_with_nonzero_gradient": 17,
+      "tensors_changed": 224,
+      "tensors_checked": 224,
+      "checks": {
+        "completed_all_steps": true,
+        "every_step_logged": true,
+        "nonzero_gradient_seen": true,
+        "all_adapter_tensors_changed": true,
+        "arm_matches_logs": true
+      },
+      "feasible": true
+    },
+    {
+      "arm": "corrected",
+      "seed": 3407,
+      "completed_steps": 20,
+      "requested_steps": 20,
+      "seconds": 799.2,
+      "peak_allocated_gib": 3.17,
+      "responses": 80,
+      "unique_questions": 20,
+      "historical_correct": 27,
+      "corrected_correct": 30,
+      "parser_disagreements": 3,
+      "format_valid": 5,
+      "hit_token_cap": 0,
+      "mean_tokens": 212.6,
+      "mean_reward": 0.7812,
+      "groups_with_reward_variation": 15,
+      "prompt_groups": 20,
+      "steps_with_nonzero_gradient": 15,
+      "tensors_changed": 224,
+      "tensors_checked": 224,
+      "checks": {
+        "completed_all_steps": true,
+        "every_step_logged": true,
+        "nonzero_gradient_seen": true,
+        "all_adapter_tensors_changed": true,
+        "arm_matches_logs": true
+      },
+      "feasible": true
+    },
+    {
+      "arm": "format_only",
+      "seed": 3407,
+      "completed_steps": 20,
+      "requested_steps": 20,
+      "seconds": 757.3,
+      "peak_allocated_gib": 3.21,
+      "responses": 80,
+      "unique_questions": 20,
+      "historical_correct": 28,
+      "corrected_correct": 35,
+      "parser_disagreements": 7,
+      "format_valid": 8,
+      "hit_token_cap": 0,
+      "mean_tokens": 214.3,
+      "mean_reward": 0.05,
+      "groups_with_reward_variation": 7,
+      "prompt_groups": 20,
+      "steps_with_nonzero_gradient": 7,
+      "tensors_changed": 224,
+      "tensors_checked": 224,
+      "checks": {
+        "completed_all_steps": true,
+        "every_step_logged": true,
+        "nonzero_gradient_seen": true,
+        "all_adapter_tensors_changed": true,
+        "arm_matches_logs": true
+      },
+      "feasible": true
+    }
+  ],
+  "matched_steps": [
+    {
+      "step": 1,
+      "source_id": 2787,
+      "historical_rewards": [
+        2.0,
+        0.0,
+        2.0,
+        2.5
+      ],
+      "corrected_rewards": [
+        2.0,
+        2.0,
+        2.0,
+        2.5
+      ],
+      "penalized_correct": [
+        "ore, the answer is <answer>407</answer>."
+      ]
+    },
+    {
+      "step": 2,
+      "source_id": 5156,
+      "historical_rewards": [
+        0.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "corrected_rewards": [
+        0.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "penalized_correct": []
+    },
+    {
+      "step": 3,
+      "source_id": 6430,
+      "historical_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "corrected_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "penalized_correct": []
+    },
+    {
+      "step": 4,
+      "source_id": 684,
+      "historical_rewards": [
+        0.0,
+        0.0,
+        2.0,
+        0.0
+      ],
+      "corrected_rewards": [
+        0.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "penalized_correct": [
+        "reading rate.\n\n<answer>25 hours</answer>"
+      ]
+    },
+    {
+      "step": 5,
+      "source_id": 1257,
+      "historical_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        2.5
+      ],
+      "corrected_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        2.5
+      ],
+      "penalized_correct": []
+    }
+  ]
+}
