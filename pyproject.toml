@@ -1,0 +1,5 @@
+[tool.black]
+line-length = 88
+target-version = ['py310']
+# Frozen evidence modules are intentionally kept byte-identical to their notebooks.
+force-exclude = '(legacy/|results/|src/(rewards|diagnostics|eval_scoring|evaluation_io)\.py)'

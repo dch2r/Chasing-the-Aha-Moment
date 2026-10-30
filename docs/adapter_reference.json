@@ -1,0 +1,12 @@
+{
+  "included": true,
+  "drive_run": "My Drive/aha_pilot_v4/20261025T191033502154Z",
+  "adapter_subdirectory": "adapter",
+  "adapter_sha256": "acf38fb03b48f44963d8e12aa8fe507ca48300b4f091cf0c990c83bcc427ec62",
+  "adapter_config_sha256": "134ba53790b4605ad02e630ee04bc2371afb60ecc19cf0644525f3511c033043",
+  "tokenizer_sha256": "63a2951d5edfa5cc0a2346ef872f8c77a2920274cfc3b503b04e3799104dee80",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "package_path": "adapter",
+  "verified_against_recorded_protocol": true
+}

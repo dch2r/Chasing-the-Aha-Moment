@@ -1,0 +1,15 @@
+{
+  "adapter_sha256": "acf38fb03b48f44963d8e12aa8fe507ca48300b4f091cf0c990c83bcc427ec62",
+  "environment": {
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.48.1",
+    "datasets": "4.1.1",
+    "peft": "0.17.1",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.56.2"
+  },
+  "gpu": "Tesla T4",
+  "purpose": "Replay of the same recorded 32-question protocol; not fresh independent evidence",
+  "recorded_protocol_sha256": "5424aac3119481b873a852ec172f5ba67b02b102c7c28d7e647a7990cc6765e1",
+  "scorer_version": "v3-tagged-numeric-presentation"
+}

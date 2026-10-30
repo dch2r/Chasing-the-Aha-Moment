@@ -1,0 +1,29 @@
+[
+  {
+    "source_id": 6762,
+    "question": "A third of all the cats in the village have spots. A quarter of the spotted cats in the village are fluffy. If there are 120 cats in the village, how many of the cats are spotted and fluffy?",
+    "gold": "10",
+    "base_correct": false,
+    "tuned_correct": true,
+    "base_response": "To solve this problem, we need to follow these steps:\n\n1. Determine the number of spotted cats in the village.\n2. Determine the number of spotted and fluffy cats.\n\nStep 1: Calculate the number of spotted cats.\nSince a third of all the cats in the village have spots, we can calculate the number of spotted cats as follows:\n\\[ \\text{Number of spotted cats} = \\frac{1}{3} \\times 120 = 40 \\]\n\nStep 2: Calculate the number of spotted and fluffy cats.\nSince a quarter of the spotted cats are fluffy, we can calculate the number of spotted and fluffy cats as follows:\n\\[ \\text{Number of spotted and fluffy cats} = \\frac{1}{4} \\times 40 = 10 \\]\n\nTherefore, there are 10 cats in the village that are both spotted and fluffy.\n\nThe final answer is 10.",
+    "tuned_response": "<reasoning>First, we need to find out how many cats are spotted. Since a third of all the cats in the village have spots, we can calculate the number of spotted cats by dividing the total number of cats by 3. So, the number of spotted cats is 120 / 3 = 40. Next, we need to find out how many of the spotted cats are fluffy. Since a quarter of the spotted cats are fluffy, we can calculate the number of fluffy spotted cats by dividing the number of spotted cats by 4. So, the number of fluffy spotted cats is 40 / 4 = 10.</reasoning>\n\n<answer>10</answer>"
+  },
+  {
+    "source_id": 7315,
+    "question": "After Bella\u2019s ballet performance, she received 2 dozen roses from her parents, and 2 roses from each of her 10 dancer friends.  How many roses did Bella receive?",
+    "gold": "44",
+    "base_correct": false,
+    "tuned_correct": true,
+    "base_response": "To determine the total number of roses Bella received, we need to calculate the roses from her parents and her dancer friends separately, and then sum them up.\n\n1. **Roses from her parents:**\n   Bella received 2 dozen roses from her parents. Since 1 dozen equals 12 roses, 2 dozen equals:\n   \\[\n   2 \\times 12 = 24 \\text{ roses}\n   \\]\n\n2. **Roses from her dancer friends:**\n   Bella received 2 roses from each of her 10 dancer friends. Therefore, the total number of roses from her friends is:\n   \\[\n   2 \\times 10 = 20 \\text{ roses}\n   \\]\n\n3. **Total roses:**\n   Adding the roses from her parents and her friends together, we get:\n   \\[\n   24 + 20 = 44 \\text{ roses}\n   \\]\n\nThus, Bella received a total of 44 roses.",
+    "tuned_response": "To determine the total number of roses Bella received, we need to calculate the roses from her parents and her dancer friends separately, and then sum them up.\n\n1. **Roses from her parents:**\n   Bella received 2 dozen roses from her parents. Since 1 dozen equals 12 roses, 2 dozen equals:\n   \\[\n   2 \\times 12 = 24 \\text{ roses}\n   \\]\n\n2. **Roses from her dancer friends:**\n   Bella received 2 roses from each of her 10 dancer friends. Therefore, the total number of roses from her friends is:\n   \\[\n   2 \\times 10 = 20 \\text{ roses}\n   \\]\n\n3. **Total roses:**\n   Adding the roses from her parents and her friends together, we get:\n   \\[\n   24 + 20 = 44 \\text{ roses}\n   \\]\n\nThus, Bella received a total of 44 roses.\n\n<answer>44</answer>"
+  },
+  {
+    "source_id": 2242,
+    "question": "Xavier runs three times as many miles as Katie, who runs 4 times as many miles as Cole. If Xavier runs 84 miles, how many miles does Cole run?",
+    "gold": "7",
+    "base_correct": true,
+    "tuned_correct": true,
+    "base_response": "Let's denote the number of miles Cole runs as \\( C \\).\n\nAccording to the problem, Katie runs 4 times as many miles as Cole, so Katie runs \\( 4C \\) miles.\n\nXavier runs three times as many miles as Katie, so Xavier runs \\( 3 \\times 4C = 12C \\) miles.\n\nWe are given that Xavier runs 84 miles, so we can set up the equation:\n\n\\[ 12C = 84 \\]\n\nTo find the value of \\( C \\), we divide both sides of the equation by 12:\n\n\\[ C = \\frac{84}{12} \\]\n\n\\[ C = 7 \\]\n\nSo, Cole runs 7 miles.\n\nTherefore, the answer is <answer>7</answer>.",
+    "tuned_response": "Let's denote the number of miles Cole runs as C. According to the problem, Katie runs 4 times as many miles as Cole, so Katie runs 4C miles. Xavier runs three times as many miles as Katie, so Xavier runs 3 * 4C = 12C miles.\n\nWe are given that Xavier runs 84 miles, so we can set up the equation:\n\n12C = 84\n\nTo find the value of C, we divide both sides of the equation by 12:\n\nC = 84 / 12\nC = 7\n\nTherefore, Cole runs 7 miles.\n\n<answer>7</answer>"
+  }
+]

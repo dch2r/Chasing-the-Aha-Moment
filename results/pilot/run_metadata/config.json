@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "seed": 3407,
+  "steps": 20,
+  "train_size": 128,
+  "dev_size": 8,
+  "max_prompt_length": 384,
+  "max_completion_length": 512,
+  "rank": 16,
+  "scorer_version": "v2-answer-field",
+  "num_generations": 4,
+  "training_budget_seconds": 1200
+}

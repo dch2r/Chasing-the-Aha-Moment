@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "saved_answers": 64,
+  "expected_questions": 32,
+  "protocol_hash": "1417f1ad990e36e94463e1b01aa67bf85806b3b1b4a388a9b742ac5f321183fe",
+  "note": "Replay of the same recorded 32-question protocol; not fresh independent evidence",
+  "base": {
+    "correct": 21,
+    "answer_parseable": 23,
+    "format_valid": 1,
+    "hit_token_cap": 0,
+    "accuracy": 0.65625
+  },
+  "tuned": {
+    "correct": 23,
+    "answer_parseable": 25,
+    "format_valid": 2,
+    "hit_token_cap": 0,
+    "accuracy": 0.71875
+  },
+  "changed_to_correct": 2,
+  "changed_to_wrong": 0,
+  "accuracy_difference_percentage_points": 6.25
+}

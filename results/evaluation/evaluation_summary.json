@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "expected_questions": 32,
+  "saved_answers": 64,
+  "scorer_version": "v3-tagged-numeric-presentation",
+  "protocol_hash": "5424aac3119481b873a852ec172f5ba67b02b102c7c28d7e647a7990cc6765e1",
+  "note": "Exploratory development comparison, not official GSM8K test performance. Training used old v2 rewards; evaluation uses frozen v3 scoring.",
+  "base": {
+    "n": 32,
+    "correct": 21,
+    "accuracy": 0.65625,
+    "accuracy_wilson_95": [
+      0.4831077350878594,
+      0.7958976664567146
+    ],
+    "parseable": 23,
+    "format_valid": 1,
+    "hit_token_cap": 0
+  },
+  "tuned": {
+    "n": 32,
+    "correct": 23,
+    "accuracy": 0.71875,
+    "accuracy_wilson_95": [
+      0.546251630618882,
+      0.8443559315435214
+    ],
+    "parseable": 25,
+    "format_valid": 2,
+    "hit_token_cap": 0
+  },
+  "changed_to_correct": 2,
+  "changed_to_wrong": 0,
+  "accuracy_difference_percentage_points": 6.25,
+  "paired_bootstrap_95_difference_pp": [
+    0.0,
+    15.625
+  ],
+  "uncertainty_note": "Small-sample descriptive intervals; bootstrap can degenerate when no outcomes change. No proof of equivalence or general improvement.",
+  "response_texts_changed": 3
+}

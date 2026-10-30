@@ -1,0 +1,505 @@
+{
+  "adapter_config_sha256": "134ba53790b4605ad02e630ee04bc2371afb60ecc19cf0644525f3511c033043",
+  "adapter_sha256": "acf38fb03b48f44963d8e12aa8fe507ca48300b4f091cf0c990c83bcc427ec62",
+  "dataset_fingerprint": "4381d71c2a22accb",
+  "do_sample": false,
+  "gpu": "Tesla T4",
+  "max_new_tokens": 512,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "purpose": "Fresh development evaluation of old-v2-reward adapter using frozen v3 scoring",
+  "questions": [
+    {
+      "gold": "12",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "A man decides to try and do everything off his bucket list while he is still young and fit enough to finish it all.  One of his goals was to climb the seven summits.  He realizes first he has to get in shape to do it and it takes him 2 years of working out to get healthy enough to take up mountain climbing.  He then spends twice that long learning how to be a technically proficient mountain climber.  After that he starts with the simplest mountain on the list and climbs them all.  He spends 5 months climbing each mountain.  After that he takes 13 months learning to dive and dives through all the caves he wants in 2 years.  How much time did it take to get through all these goals?",
+          "role": "user"
+        }
+      ],
+      "question": "A man decides to try and do everything off his bucket list while he is still young and fit enough to finish it all.  One of his goals was to climb the seven summits.  He realizes first he has to get in shape to do it and it takes him 2 years of working out to get healthy enough to take up mountain climbing.  He then spends twice that long learning how to be a technically proficient mountain climber.  After that he starts with the simplest mountain on the list and climbs them all.  He spends 5 months climbing each mountain.  After that he takes 13 months learning to dive and dives through all the caves he wants in 2 years.  How much time did it take to get through all these goals?",
+      "source_id": 1531
+    },
+    {
+      "gold": "206",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Six more than twice as many ducks go to North Pond as go to Lake Michigan. If Lake Michigan has 100 ducks, how many ducks can you safely estimate there will be at North Pond?",
+          "role": "user"
+        }
+      ],
+      "question": "Six more than twice as many ducks go to North Pond as go to Lake Michigan. If Lake Michigan has 100 ducks, how many ducks can you safely estimate there will be at North Pond?",
+      "source_id": 3897
+    },
+    {
+      "gold": "404",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Toby is in a juggling contest with a friend. The winner is whoever gets the most objects rotated around in 4 minutes. Toby has 5 baseballs and each one makes 80 rotations. His friend has 4 apples and each one makes 101 rotations. How many total rotations of objects are made by the winner?",
+          "role": "user"
+        }
+      ],
+      "question": "Toby is in a juggling contest with a friend. The winner is whoever gets the most objects rotated around in 4 minutes. Toby has 5 baseballs and each one makes 80 rotations. His friend has 4 apples and each one makes 101 rotations. How many total rotations of objects are made by the winner?",
+      "source_id": 1716
+    },
+    {
+      "gold": "48",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Zain has 10 more of each coin than Emerie. If Emerie has six quarters, seven dimes, and five nickels, how many coins does Zain have?",
+          "role": "user"
+        }
+      ],
+      "question": "Zain has 10 more of each coin than Emerie. If Emerie has six quarters, seven dimes, and five nickels, how many coins does Zain have?",
+      "source_id": 4265
+    },
+    {
+      "gold": "5",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "John jogs at a speed of 4 miles per hour when he runs alone, but runs at 6 miles per hour when he is being dragged by his 100-pound German Shepherd dog. If John and his dog go on a run together for 30 minutes, and then John runs for an additional 30 minutes by himself, how far will John have traveled?",
+          "role": "user"
+        }
+      ],
+      "question": "John jogs at a speed of 4 miles per hour when he runs alone, but runs at 6 miles per hour when he is being dragged by his 100-pound German Shepherd dog. If John and his dog go on a run together for 30 minutes, and then John runs for an additional 30 minutes by himself, how far will John have traveled?",
+      "source_id": 729
+    },
+    {
+      "gold": "5",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "In the second hour of a storm it rains 7 inches more than twice the amount it rained the first hour. The total amount of rain in the first two hours is 22 inches. How much did it rain in the first hour?",
+          "role": "user"
+        }
+      ],
+      "question": "In the second hour of a storm it rains 7 inches more than twice the amount it rained the first hour. The total amount of rain in the first two hours is 22 inches. How much did it rain in the first hour?",
+      "source_id": 4684
+    },
+    {
+      "gold": "18",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Heather helps her neighbour pick weeds out of her garden. She gets paid 5 cents for every weed she picks. On average, how many seconds can she take to pick a weed if she wants to earn $10 an hour?",
+          "role": "user"
+        }
+      ],
+      "question": "Heather helps her neighbour pick weeds out of her garden. She gets paid 5 cents for every weed she picks. On average, how many seconds can she take to pick a weed if she wants to earn $10 an hour?",
+      "source_id": 3474
+    },
+    {
+      "gold": "347",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Monika went out for the day and spent some money. She went to the mall and spent $250. Then, she went to the movies and watched 3 movies back to back that each cost $24. Then she stopped by the farmer's market on her way home and got 20 bags of beans at $1.25/bag. How much money did Monika spend throughout her day?",
+          "role": "user"
+        }
+      ],
+      "question": "Monika went out for the day and spent some money. She went to the mall and spent $250. Then, she went to the movies and watched 3 movies back to back that each cost $24. Then she stopped by the farmer's market on her way home and got 20 bags of beans at $1.25/bag. How much money did Monika spend throughout her day?",
+      "source_id": 369
+    },
+    {
+      "gold": "295",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Lauren sent 65 pieces of mail on Monday, 10 more pieces of mail on Tuesday than on Monday, 5 fewer on Wednesday than on Tuesday, and 15 more pieces of mail on Thursday than on Wednesday. How many pieces of mail did Lauren send?",
+          "role": "user"
+        }
+      ],
+      "question": "Lauren sent 65 pieces of mail on Monday, 10 more pieces of mail on Tuesday than on Monday, 5 fewer on Wednesday than on Tuesday, and 15 more pieces of mail on Thursday than on Wednesday. How many pieces of mail did Lauren send?",
+      "source_id": 5404
+    },
+    {
+      "gold": "240",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Adam bought 15 apples on Monday. On Tuesday he bought 3 times that quantity. On Wednesday he bought 4 times the quantity he bought on Tuesday. What is the total quantity Adam bought on these three days?",
+          "role": "user"
+        }
+      ],
+      "question": "Adam bought 15 apples on Monday. On Tuesday he bought 3 times that quantity. On Wednesday he bought 4 times the quantity he bought on Tuesday. What is the total quantity Adam bought on these three days?",
+      "source_id": 2108
+    },
+    {
+      "gold": "480",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Susan is taking a two week vacation. She works five days a week and has six days of paid vacation. The rest of her workdays will be unpaid vacation time. She gets paid $15 per hour and works 8 hours a day. How much pay will she miss on her vacation?",
+          "role": "user"
+        }
+      ],
+      "question": "Susan is taking a two week vacation. She works five days a week and has six days of paid vacation. The rest of her workdays will be unpaid vacation time. She gets paid $15 per hour and works 8 hours a day. How much pay will she miss on her vacation?",
+      "source_id": 3867
+    },
+    {
+      "gold": "12",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Jack bought an ice cream cone before jogging to the beach. If the ice cream cone will melt in 10 minutes, the beach is 16 blocks away, and each block is 1/8th of a mile, how fast does Jack need to jog (in miles per hour) to get to the beach before the ice cream melts?",
+          "role": "user"
+        }
+      ],
+      "question": "Jack bought an ice cream cone before jogging to the beach. If the ice cream cone will melt in 10 minutes, the beach is 16 blocks away, and each block is 1/8th of a mile, how fast does Jack need to jog (in miles per hour) to get to the beach before the ice cream melts?",
+      "source_id": 4485
+    },
+    {
+      "gold": "22",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Saturday at the ice cream shop, there were twice as many people who ordered vanilla ice cream as ordered chocolate ice cream.  If 220 people ordered ice cream on Saturday, and 20% of those ordered vanilla ice cream, how many people ordered chocolate ice cream?",
+          "role": "user"
+        }
+      ],
+      "question": "Saturday at the ice cream shop, there were twice as many people who ordered vanilla ice cream as ordered chocolate ice cream.  If 220 people ordered ice cream on Saturday, and 20% of those ordered vanilla ice cream, how many people ordered chocolate ice cream?",
+      "source_id": 2765
+    },
+    {
+      "gold": "10",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "While passing by a store, Miley noticed that a bag that cost $150 last week is now on sale for $135. What percent is the discount?",
+          "role": "user"
+        }
+      ],
+      "question": "While passing by a store, Miley noticed that a bag that cost $150 last week is now on sale for $135. What percent is the discount?",
+      "source_id": 2204
+    },
+    {
+      "gold": "2",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Omar buys a 12-ounce cup of coffee every morning on the way to work. On the way to work, he drinks one-quarter of the cup. When he gets to his office, he drinks another half of the cup. He forgets to drink any more of his coffee once he starts working, and when he remembers his coffee, he only drinks 1 ounce of the remaining amount because it is cold. How many ounces will be left in the cup afterward?",
+          "role": "user"
+        }
+      ],
+      "question": "Omar buys a 12-ounce cup of coffee every morning on the way to work. On the way to work, he drinks one-quarter of the cup. When he gets to his office, he drinks another half of the cup. He forgets to drink any more of his coffee once he starts working, and when he remembers his coffee, he only drinks 1 ounce of the remaining amount because it is cold. How many ounces will be left in the cup afterward?",
+      "source_id": 5460
+    },
+    {
+      "gold": "40",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Bryan starts exercising at home during quarantine. To start, he decides to do 3 sets of 15 push-ups each. Near the end of the third set, he gets tired and does 5 fewer push-ups. How many push-ups did he do in total?",
+          "role": "user"
+        }
+      ],
+      "question": "Bryan starts exercising at home during quarantine. To start, he decides to do 3 sets of 15 push-ups each. Near the end of the third set, he gets tired and does 5 fewer push-ups. How many push-ups did he do in total?",
+      "source_id": 233
+    },
+    {
+      "gold": "2800",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "John used to be able to squat 135 pounds.  After training, he increased that by 265 pounds.  He then gets a magical strength-increasing bracer that increases his strength by an additional 600%.  How much can he now lift?",
+          "role": "user"
+        }
+      ],
+      "question": "John used to be able to squat 135 pounds.  After training, he increased that by 265 pounds.  He then gets a magical strength-increasing bracer that increases his strength by an additional 600%.  How much can he now lift?",
+      "source_id": 5248
+    },
+    {
+      "gold": "10",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "A third of all the cats in the village have spots. A quarter of the spotted cats in the village are fluffy. If there are 120 cats in the village, how many of the cats are spotted and fluffy?",
+          "role": "user"
+        }
+      ],
+      "question": "A third of all the cats in the village have spots. A quarter of the spotted cats in the village are fluffy. If there are 120 cats in the village, how many of the cats are spotted and fluffy?",
+      "source_id": 6762
+    },
+    {
+      "gold": "44",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "After Bella\u2019s ballet performance, she received 2 dozen roses from her parents, and 2 roses from each of her 10 dancer friends.  How many roses did Bella receive?",
+          "role": "user"
+        }
+      ],
+      "question": "After Bella\u2019s ballet performance, she received 2 dozen roses from her parents, and 2 roses from each of her 10 dancer friends.  How many roses did Bella receive?",
+      "source_id": 7315
+    },
+    {
+      "gold": "44",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "A bag was originally priced at $500. A week after, the price was reduced by 5%. Since the bag was still not sold, the selling price was reduced by 4% a month after. How much was the total reduction from the original selling price?",
+          "role": "user"
+        }
+      ],
+      "question": "A bag was originally priced at $500. A week after, the price was reduced by 5%. Since the bag was still not sold, the selling price was reduced by 4% a month after. How much was the total reduction from the original selling price?",
+      "source_id": 3380
+    },
+    {
+      "gold": "7",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Xavier runs three times as many miles as Katie, who runs 4 times as many miles as Cole. If Xavier runs 84 miles, how many miles does Cole run?",
+          "role": "user"
+        }
+      ],
+      "question": "Xavier runs three times as many miles as Katie, who runs 4 times as many miles as Cole. If Xavier runs 84 miles, how many miles does Cole run?",
+      "source_id": 2242
+    },
+    {
+      "gold": "22",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Brian has twice as many tennis balls as Frodo, who has 8 more than Lily. If Lily has 3 tennis balls, how many does Brian have?",
+          "role": "user"
+        }
+      ],
+      "question": "Brian has twice as many tennis balls as Frodo, who has 8 more than Lily. If Lily has 3 tennis balls, how many does Brian have?",
+      "source_id": 2438
+    },
+    {
+      "gold": "270",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Michael bought 6 crates of egg on Tuesday. He gave out 2 crates to Susan, who he admires and bought another 5 crates on Thursday. If one crate holds 30 eggs, how many eggs does he have now?",
+          "role": "user"
+        }
+      ],
+      "question": "Michael bought 6 crates of egg on Tuesday. He gave out 2 crates to Susan, who he admires and bought another 5 crates on Thursday. If one crate holds 30 eggs, how many eggs does he have now?",
+      "source_id": 5915
+    },
+    {
+      "gold": "140",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Kira wants some new music on her phone. She downloads 10 songs in the morning. Later on that day, she finds 15 more songs she likes so she downloads them, and at night a friend of hers recommends 3 more songs she also downloads. Knowing that each song has a size of 5 MB, how much memory space in MB will the new songs occupy?",
+          "role": "user"
+        }
+      ],
+      "question": "Kira wants some new music on her phone. She downloads 10 songs in the morning. Later on that day, she finds 15 more songs she likes so she downloads them, and at night a friend of hers recommends 3 more songs she also downloads. Knowing that each song has a size of 5 MB, how much memory space in MB will the new songs occupy?",
+      "source_id": 1981
+    },
+    {
+      "gold": "770",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Queenie earns $150 a day as a part-time clerk. She earns an additional $5 per hour as overtime pay. How much will Queenie receive for working 5 days with 4 hours overtime?",
+          "role": "user"
+        }
+      ],
+      "question": "Queenie earns $150 a day as a part-time clerk. She earns an additional $5 per hour as overtime pay. How much will Queenie receive for working 5 days with 4 hours overtime?",
+      "source_id": 6662
+    },
+    {
+      "gold": "315",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Cyrus has been contracted to write a 500 page book.  On his first day, he writes 25 pages and twice that amount on the second day.  On the third day he is able to write twice the amount that he did on the second day.  On the fourth day, he gets writer's block and is only able to write 10 pages.  How many more pages does he need to write?",
+          "role": "user"
+        }
+      ],
+      "question": "Cyrus has been contracted to write a 500 page book.  On his first day, he writes 25 pages and twice that amount on the second day.  On the third day he is able to write twice the amount that he did on the second day.  On the fourth day, he gets writer's block and is only able to write 10 pages.  How many more pages does he need to write?",
+      "source_id": 6078
+    },
+    {
+      "gold": "24",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Prudence was starting a cupcake business.  She figured that each cupcake cost $0.75 to make.  The first 2 dozen that she made burnt and she had to throw them out.  The next 2 came out perfectly and she ended up eating 5 cupcakes right away.  Later that day she made 2 more dozen cupcakes and decided to eat 4 more. If she sells the remaining cupcakes at $2.00 each, how much is her net profit?",
+          "role": "user"
+        }
+      ],
+      "question": "Prudence was starting a cupcake business.  She figured that each cupcake cost $0.75 to make.  The first 2 dozen that she made burnt and she had to throw them out.  The next 2 came out perfectly and she ended up eating 5 cupcakes right away.  Later that day she made 2 more dozen cupcakes and decided to eat 4 more. If she sells the remaining cupcakes at $2.00 each, how much is her net profit?",
+      "source_id": 1363
+    },
+    {
+      "gold": "40",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "If the number of dogs in the neighborhood was originally half the number of cats in the neighborhood before twenty new dogs were born, and now there are twice as many dogs as cats, how many cats were in the neighborhood, to begin with, if there are 20 cats now?",
+          "role": "user"
+        }
+      ],
+      "question": "If the number of dogs in the neighborhood was originally half the number of cats in the neighborhood before twenty new dogs were born, and now there are twice as many dogs as cats, how many cats were in the neighborhood, to begin with, if there are 20 cats now?",
+      "source_id": 7305
+    },
+    {
+      "gold": "105",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Karl, Ryan, and Ben are fond of collecting stickers. Karl has 25 stickers. Ryan has 20 more stickers than Karl. Ben has 10 fewer stickers than Ryan. They placed all their stickers in one sticker book. How many stickers did they place altogether?",
+          "role": "user"
+        }
+      ],
+      "question": "Karl, Ryan, and Ben are fond of collecting stickers. Karl has 25 stickers. Ryan has 20 more stickers than Karl. Ben has 10 fewer stickers than Ryan. They placed all their stickers in one sticker book. How many stickers did they place altogether?",
+      "source_id": 5510
+    },
+    {
+      "gold": "32",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "For the gala luncheon planning committee, Margaret wants to serve chicken salad sandwiches using mini croissants.  She wants there to be enough food that each person on the committee can have 2 sandwiches each.  Her bakery offers 12 minis croissants for $8.00.  There are 24 people on the committee. How much will she spend on croissants?",
+          "role": "user"
+        }
+      ],
+      "question": "For the gala luncheon planning committee, Margaret wants to serve chicken salad sandwiches using mini croissants.  She wants there to be enough food that each person on the committee can have 2 sandwiches each.  Her bakery offers 12 minis croissants for $8.00.  There are 24 people on the committee. How much will she spend on croissants?",
+      "source_id": 4210
+    },
+    {
+      "gold": "50",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "There are 26 chickens, 40 piglets, and 34 goats at Stacy\u2019s farm. A really bad storm hits and half of all the animals get sick. How many animals in total get sick?",
+          "role": "user"
+        }
+      ],
+      "question": "There are 26 chickens, 40 piglets, and 34 goats at Stacy\u2019s farm. A really bad storm hits and half of all the animals get sick. How many animals in total get sick?",
+      "source_id": 4535
+    },
+    {
+      "gold": "110",
+      "prompt": [
+        {
+          "content": "Solve the problem. Respond with <reasoning>your solution</reasoning> followed by <answer>the numeric answer</answer>.",
+          "role": "system"
+        },
+        {
+          "content": "Last month, you borrowed $100 from your friend. If you promise to pay her today, how much will you give to your friend if both of you agreed to return the money with a 10% increase?",
+          "role": "user"
+        }
+      ],
+      "question": "Last month, you borrowed $100 from your friend. If you promise to pay her today, how much will you give to your friend if both of you agreed to return the money with a 10% increase?",
+      "source_id": 4643
+    }
+  ],
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "scorer_sha256": "18dc67429c9682d6ec9255b2dfed714965dae9d8a7dbb194f768b05c5f39b5b1",
+  "scorer_version": "v3-tagged-numeric-presentation",
+  "seed": 3407,
+  "tokenizer_sha256": "63a2951d5edfa5cc0a2346ef872f8c77a2920274cfc3b503b04e3799104dee80",
+  "versions": {
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.48.1",
+    "datasets": "4.1.1",
+    "peft": "0.17.1",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.56.2"
+  }
+}

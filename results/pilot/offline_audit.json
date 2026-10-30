@@ -1,0 +1,89 @@
+{
+  "completions": 80,
+  "old_correct": 25,
+  "new_correct": 38,
+  "new_parseable": 55,
+  "old_varied_groups": 14,
+  "counterfactual_varied_groups": 13,
+  "changes": [
+    {
+      "group": 1,
+      "index": 1,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 4,
+      "index": 3,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 8,
+      "index": 0,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 8,
+      "index": 2,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 8,
+      "index": 3,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 11,
+      "index": 2,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 14,
+      "index": 0,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 16,
+      "index": 1,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 18,
+      "index": 1,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 18,
+      "index": 2,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 19,
+      "index": 1,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 20,
+      "index": 1,
+      "old": false,
+      "new": true
+    },
+    {
+      "group": 20,
+      "index": 2,
+      "old": false,
+      "new": true
+    }
+  ],
+  "note": "Offline rescore of fixed historical training outputs. No model changed; hypothetical rewards are not rewards used in training."
+}

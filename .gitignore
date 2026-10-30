@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
+*.bin
+*.safetensors
+!adapter/adapter_model.safetensors
+checkpoints/
+runs/
+replay_outputs/
+*.interrupted
+.DS_Store
+*.zip

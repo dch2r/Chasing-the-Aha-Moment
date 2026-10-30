@@ -1,0 +1,16 @@
+{
+  "verified_on": "2026-10-27",
+  "complete": true,
+  "unique_responses": 64,
+  "text_identical_to_original": 64,
+  "gpu_recorded": "Tesla T4",
+  "base_correct": 21,
+  "tuned_correct": 23,
+  "questions": 32,
+  "interpretation": "Successful replay of the existing development protocol; not independent evidence of reasoning gains.",
+  "files": {
+    "evaluation_summary.json": "e0e33aeafd46997a24c60790086e9de376811d321ee6058490ce3a012bbe6d6f",
+    "evaluation_predictions.jsonl": "512c70fc133b484729ff97bdc1d1b6196b4882053c0e2f0eefc4fe8dda2354b1",
+    "replay_protocol.json": "1417f1ad990e36e94463e1b01aa67bf85806b3b1b4a388a9b742ac5f321183fe"
+  }
+}

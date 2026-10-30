@@ -1,0 +1,34 @@
+{
+  "logged_completions": 80,
+  "reward_calls": 20,
+  "prompt_groups": 20,
+  "groups_with_reward_variation": 14,
+  "status_counts": {
+    "correct": 25,
+    "missing_or_ambiguous_answer_field": 38,
+    "parsed_answer_mismatch": 14,
+    "unsupported_numeric_answer": 3
+  },
+  "format_valid": 3,
+  "hit_token_cap": 0,
+  "note": "Counts describe sampled training responses, not held-out accuracy. Missing answer fields need human inspection.",
+  "scorer_version": "v2-answer-field",
+  "num_generations": 4,
+  "requested_optimizer_steps": 20,
+  "budget_triggered": false,
+  "stop_reason": "step_limit",
+  "fraction_groups_with_reward_variation": 0.7,
+  "unique_training_questions": 20,
+  "mean_reward": 0.64375,
+  "completed_optimizer_steps": 20,
+  "steps_with_nonzero_gradient": 14,
+  "adapter_change": {
+    "tensors_checked": 224,
+    "tensors_changed": 224,
+    "elements_changed": 4358039,
+    "l2_change": 0.029389507189521557,
+    "max_abs_change": 4.3004463805118576e-05,
+    "weights_changed": true
+  },
+  "interpretation": "Weight changes confirm optimization activity, not improved reasoning or held-out accuracy."
+}

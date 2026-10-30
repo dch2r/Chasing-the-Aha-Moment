@@ -1,0 +1,19 @@
+{
+  "n": 32,
+  "base_correct": 21,
+  "tuned_correct": 23,
+  "both_correct": 21,
+  "both_incorrect": 9,
+  "gains": 2,
+  "losses": 0,
+  "difference_percentage_points": 6.25,
+  "paired_bootstrap_95_percentile_pp": [
+    0.0,
+    15.625
+  ],
+  "exact_mcnemar_two_sided_p": 0.5,
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 3407,
+  "response_texts_changed": 3,
+  "interpretation": "Tagged-answer metric on 32 development questions; not evidence of improved mathematical reasoning."
+}
