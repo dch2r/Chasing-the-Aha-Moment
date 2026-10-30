@@ -54,7 +54,7 @@ python scripts/evaluate.py --adapter adapter --output runs/replay
 
 The tested environment is recorded in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md). The evaluator uses a 20-minute soft generation budget. If it prints `PAUSED`, rerun the same command to continue. Outputs cannot overwrite the saved evidence or adapter.
 
-For Colab, open [notebooks/Evaluate_Saved_Adapter.ipynb](notebooks/Evaluate_Saved_Adapter.ipynb) in a T4 session. Run installation, restart, then run the remaining cells. Set `REPO_URL` to this repository's URL to clone it, or leave it empty and upload the repository ZIP when prompted. Drive is used only to preserve replay outputs. No retraining is needed.
+For Colab, open [notebooks/Evaluate_Saved_Adapter.ipynb](notebooks/Evaluate_Saved_Adapter.ipynb) in a T4 session. Run installation, restart, then run the remaining cells. It clones this repository by default; set `REPO_URL = ''` to upload a ZIP instead. Drive is used only to preserve replay outputs. No retraining is needed.
 
 ## Training and further experiments
 
