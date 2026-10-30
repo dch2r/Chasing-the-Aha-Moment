@@ -1,6 +1,6 @@
 # Validation
 
-- 57 CPU unit tests cover reward extraction, logging, interrupted-output recovery, adapter fingerprint checks, paired analysis and the prepared reward-ablation components.
+- 64 CPU unit tests cover reward extraction, logging, interrupted-output recovery, adapter fingerprint checks, paired analysis, the reward-ablation components and the ablation logging and summary.
 - `scripts/verify_results.py` checks 64 evaluation outputs, 80 training responses, protocol and scorer hashes, full 128-training / 8-prior-development / 32-evaluation ID separation and consistency between standalone modules and their notebook-embedded copies.
 - All Python files and executable notebook cells parse. The portable command-line help works without importing GPU dependencies.
 - Historical notebook code and outputs are unchanged; see `legacy/README.md` for the metadata edits.

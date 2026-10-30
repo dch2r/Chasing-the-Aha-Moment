@@ -1,6 +1,6 @@
 # Next experiment: does reward parsing change learning?
 
-Status: protocol and CPU-tested reward components prepared; training and new evaluation not run. This is the substantive next step if the goal is a stronger research project. README polishing alone cannot supply new evidence.
+Status: protocol, reward components and the stage 1 runner are prepared and CPU-tested; no ablation training or new evaluation has been run yet. This is the substantive next step if the goal is a stronger research project. README polishing alone cannot supply new evidence.
 
 ## Hypothesis and controls
 
@@ -12,7 +12,7 @@ A parser that rejects correct numeric answer fields because of punctuation can c
 
 The untrained base model is an additional evaluation arm. The format-only control tests whether any gain can be explained by formatting alone. These adapters must be trained from the base, not continued from the current saved adapter. The old adapter is historical evidence, not a substitute for a matched experimental run.
 
-The components in `src/experiment_rewards.py` are tested. The historical arm is checked against all 80 recorded rewards. No prospective training runner has been validated yet; do not replace the existing notebook reward functions casually, because logging must follow the selected arm too.
+The components in `src/experiment_rewards.py` are tested. The historical arm is checked against all 80 recorded rewards. `scripts/train_arm.py` trains one arm and seed with the pilot's settings, and `src/arm_logging.py` scores every sampled response with both parsers regardless of arm. `notebooks/Reward_Ablation_Stage1.ipynb` runs stage 1 on a Colab T4, and `scripts/summarize_ablation.py` compares the arms. The runner has not yet been run on a GPU.
 
 ## Fixed design
 

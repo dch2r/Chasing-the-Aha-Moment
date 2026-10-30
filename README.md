@@ -60,7 +60,7 @@ For Colab, open [notebooks/Evaluate_Saved_Adapter.ipynb](notebooks/Evaluate_Save
 
 [notebooks/Train_Pilot.ipynb](notebooks/Train_Pilot.ipynb) contains the recorded 20-step workflow. It intentionally preserves the historical reward parser, including its known presentation-related false negatives.
 
-The next study compares historical, corrected and format-only rewards under matched settings. The protocol and tested reward components are prepared in [experiments/](experiments/); **those training runs have not been performed**. See [docs/NEXT_EXPERIMENT.md](docs/NEXT_EXPERIMENT.md) before allocating GPU time.
+The next study compares historical, corrected and format-only rewards under matched settings. The protocol is in [experiments/](experiments/), and [notebooks/Reward_Ablation_Stage1.ipynb](notebooks/Reward_Ablation_Stage1.ipynb) runs the first stage on a T4; **those training runs have not been performed yet**. See [docs/NEXT_EXPERIMENT.md](docs/NEXT_EXPERIMENT.md) before allocating GPU time.
 
 ## Repository map
 
